@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Soma dos Dois Maiores Valores</title>
+</head>
+<body>
+    <script>
+        let valor1 = parseFloat(prompt("Digite o primeiro valor:"));
+        let valor2 = parseFloat(prompt("Digite o segundo valor:"));
+        let valor3 = parseFloat(prompt("Digite o terceiro valor:"));
+        let somaDosMaiores;
+        
+        if (valor1 > valor2 && valor1 > valor3) {
+            somaDosMaiores = valor1 + Math.max(valor2, valor3);
+        } else if (valor2 > valor1 && valor2 > valor3) {
+            somaDosMaiores = valor2 + Math.max(valor1, valor3);
+        } else {
+            somaDosMaiores = valor3 + Math.max(valor1, valor2);
+        }
+        console.log(`A soma dos dois maiores valores é ${somaDosMaiores}`);
+    </script>
+</body>
+</html>

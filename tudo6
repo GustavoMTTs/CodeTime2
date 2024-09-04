@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Filtrar e Somar Valores</title>
+</head>
+<body>
+    <script>
+        function obterValor(promptMessage) {
+            return parseFloat(prompt(promptMessage));
+        }
+
+        let valores = [];
+        for (let i = 0; i < 6; i++) {
+            valores.push(obterValor(`Digite o valor ${i + 1}:`));
+        }
+
+        let soma = 0;
+
+        for (let i = 0; i < valores.length; i++) {
+            if (valores[i] < 72) {
+                soma += valores[i];
+            }
+        }
+
+        console.log(`Valores informados: ${valores.join(', ')}`);
+        console.log(`Soma dos valores inferiores a 72: ${soma}`);
+    </script>
+</body>
+</html>

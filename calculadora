@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Micro Calculadora</title>
+</head>
+<body>
+    <script>
+        function obterValor(promptMessage) {
+            return parseInt(prompt(promptMessage), 10);
+        }
+
+        let valor1 = obterValor("Digite o primeiro valor inteiro:");
+        let valor2 = obterValor("Digite o segundo valor inteiro:");
+
+        let operacao = obterValor("Escolha a operação:\n1. Adição\n2. Subtração\n3. Divisão\n4. Multiplicação");
+
+        let resultado;
+
+        switch (operacao) {
+            case 1:
+                resultado = valor1 + valor2;
+                console.log(`Resultado da adição: ${resultado}`);
+                break;
+            case 2:
+                resultado = valor1 - valor2;
+                console.log(`Resultado da subtração: ${resultado}`);
+                break;
+            case 3:
+                if (valor2 !== 0) {
+                    resultado = valor1 / valor2;
+                    console.log(`Resultado da divisão: ${resultado}`);
+                } else {
+                    console.log("Erro: Divisão por zero não é permitida.");
+                }
+                break;
+            case 4:
+                resultado = valor1 * valor2;
+                console.log(`Resultado da multiplicação: ${resultado}`);
+                break;
+            default:
+                console.log("Operação inválida. Escolha um número entre 1 e 4.");
+                break;
+        }
+    </script>
+</body>
+</html>

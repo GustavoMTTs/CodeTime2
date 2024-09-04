@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exibir Valores</title>
+</head>
+<body>
+    <script>
+        function obterValor(promptMessage) {
+            return parseFloat(prompt(promptMessage));
+        }
+
+        let valor1 = obterValor("Digite o primeiro valor:");
+        let valor2 = obterValor("Digite o segundo valor:");
+        let valor3 = obterValor("Digite o terceiro valor:");
+        let valor4 = obterValor("Digite o quarto valor:");
+
+        let maiorValor = Math.max(valor1, valor2, valor3, valor4);
+
+        console.log(`Primeiro valor: ${valor1}`);
+        console.log(`Último valor: ${valor4}`);
+        console.log(`Maior valor: ${maiorValor}`);
+    </script>
+</body>
+</html>

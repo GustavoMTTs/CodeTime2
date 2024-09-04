@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo da Média Aritmética</title>
+</head>
+<body>
+    <script>
+        function obterValor(promptMessage) {
+            return parseFloat(prompt(promptMessage));
+        }
+        let valor1 = obterValor("Digite o primeiro valor:");
+        let valor2 = obterValor("Digite o segundo valor:");
+        let valor3 = obterValor("Digite o terceiro valor:");
+        let valor4 = obterValor("Digite o quarto valor:");
+        let valor5 = obterValor("Digite o quinto valor:");
+        let valor6 = obterValor("Digite o sexto valor:");
+        
+        let soma = valor1 + valor2 + valor3 + valor4 + valor5 + valor6;
+
+        let media = soma / 6;
+
+
+        console.log(`Valores informados: ${valor1}, ${valor2}, ${valor3}, ${valor4}, ${valor5}, ${valor6}`);
+        console.log(`A média aritmética dos valores é ${media}`);
+    </script>
+</body>
+</html>

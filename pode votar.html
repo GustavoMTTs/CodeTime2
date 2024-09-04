@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificação de Idade para Votação</title>
+</head>
+<body>
+    <script>
+        function obterAno(promptMessage) {
+            return parseInt(prompt(promptMessage), 10);
+        }
+
+        let anoNascimento = obterAno("Digite o ano de nascimento:");
+
+        let anoAtual = new Date().getFullYear();
+
+        let idade = anoAtual - anoNascimento;
+
+        if (idade >= 16) {
+            console.log("Você pode votar este ano.");
+        } else {
+            console.log("Você não pode votar este ano.");
+        }
+    </script>
+</body>
+</html>

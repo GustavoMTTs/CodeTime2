@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Maior Valor</title>
+</head>
+<body>
+    <script>
+        let valor1 = parseFloat(prompt("Digite o primeiro valor:"));
+        let valor2 = parseFloat(prompt("Digite o segundo valor:"));
+        let valor3 = parseFloat(prompt("Digite o terceiro valor:"));
+
+        let maiorValor;
+        
+        if (valor1 > valor2 && valor1 > valor3) {
+            maiorValor = valor1;
+        } else if (valor2 > valor1 && valor2 > valor3) {
+            maiorValor = valor2;
+        } else {
+            maiorValor = valor3;
+        }
+        console.log(`O maior valor informado é ${maiorValor}`);
+    </script>
+</body>
+</html>
